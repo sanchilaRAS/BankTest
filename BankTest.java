@@ -87,7 +87,7 @@ public class SavingAccount extends Bank{
 		
 	}
 	
-	//public SavingAccount(){}
+	
 	
 	public void setAmount(double amount){
 		amount=amount;
@@ -96,8 +96,7 @@ public class SavingAccount extends Bank{
 		return amount;
 	}
 	public  double calcint(){
-		//getBalance()=getBalance()+(getBalance()*0.04);
-		//return getBalance();
+		
 		  return getBalance()*0.01;
 	}
 	
@@ -123,10 +122,6 @@ public class SavingAccount extends Bank{
 		else{super.deposite(amount);}
 		
 	}
-	/*@Override
-	public void display(){
-		System.out.println("Name:"+Name+"\nAccountNumber:"+AccountNumber+"\nBalance:"+Balance);
-	}*/
 	
 	
 	
@@ -152,15 +147,7 @@ public class BankTest{
 	
 		System.out.println("");
 		
-		
-
-		//Bank obj=new Bank(name,acNum,type,balance);
-		
-		//obj.display();
 		SavingAccount obj1=new SavingAccount(name,acNum,type,balance,amount);
-	//SavingAccount obj2=new SavingAccount();
-		
-		//obj1.deposite(amount);
 		obj1.depositeMoney();
 		obj1.display();
 		
